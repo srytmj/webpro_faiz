@@ -27,11 +27,8 @@ class Gaji extends CI_Controller {
     {
         $data['filter_status'] = $this->input->get('filter_status') ?? '';
         $data['filter_tanggal'] = $this->input->get('filter_tanggal') ?? '';
-    
-        // $data['detail'] = $this->gaji_model->getGajiByStatus($data['filter_status'], $data['filter_tanggal']);
-        // $data['records'] = $this->gaji_model->laporan_default();
+        
         $data['detail'] = $this->transgaji_model->tampil_detail_gaji_formatted($data['filter_status'], $data['filter_tanggal']);
-        // $this->load->view('gaji_laporan', $data);
         $this->load->view('gaji_laporan', $data);
     }
     

@@ -9,7 +9,7 @@
 
 <body class="container mt-4">
     <!-- Formulir Filter -->
-    <form action="<?= site_url('GajiLaporan'); ?>" method="get" class="mb-4">
+    <form action="<?= site_url('gaji/laporan'); ?>" method="get" class="mb-4">
     <div class="form-row align-items-end">
         <div class="form-group col-md-3">
             <label for="filter_status">Filter Status:</label>
